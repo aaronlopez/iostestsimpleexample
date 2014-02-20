@@ -34,5 +34,8 @@
 {
     XCTAssert(true,@"Comprueba que sea verdad");
 }
-
+-(void) testFalse
+{
+    XCTAssertFalse(NO, @"Comprueba que sea falso");
+}
 @end
