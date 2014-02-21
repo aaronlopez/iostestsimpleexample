@@ -32,6 +32,6 @@
 }
 -(void) testFalse
 {
-    XCTAssertFalse(NO, @"Comprueba que sea falso");
+    XCTAssertFalse(YES, @"Comprueba que sea falso");
 }
 @end
