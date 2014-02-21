@@ -390,6 +390,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iostestsimpleexample/iostestsimpleexample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -399,6 +400,7 @@
 				INFOPLIST_FILE = "iostestsimpleexampleTests/iostestsimpleexampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -413,11 +415,13 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iostestsimpleexample/iostestsimpleexample-Prefix.pch";
 				INFOPLIST_FILE = "iostestsimpleexampleTests/iostestsimpleexampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -441,6 +445,7 @@
 				59185E4C18B69FFB00503203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59185E4D18B69FFB00503203 /* Build configuration list for PBXNativeTarget "iostestsimpleexampleTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +454,7 @@
 				59185E4F18B69FFB00503203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
