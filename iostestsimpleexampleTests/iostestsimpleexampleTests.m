@@ -28,10 +28,21 @@
 
 -(void) testTrue
 {
-    XCTAssert(true,@"Comprueba que sea verdad");
+    XCTAssert(YES,@"Comprueba que sea verdad");
 }
 -(void) testFalse
 {
-    XCTAssertFalse(YES, @"Comprueba que sea falso");
+    XCTAssertFalse(NO, @"Comprueba que sea falso");
+}
+
+-(void) testNil
+{
+    XCTAssertNil(nil, @"Valor nil");
+}
+
+-(void) testNotNil
+{
+
+    XCTAssertNotNil(@5, @"No nulo");
 }
 @end
