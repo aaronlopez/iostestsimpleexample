@@ -10,12 +10,17 @@
 
 @interface iostestsimpleexampleTests : XCTestCase
 
+@property  NSArray *testArray;
+
+
+
 @end
 
 @implementation iostestsimpleexampleTests
 
 - (void)setUp
 {
+    _testArray=@[@"Hola",@"Mundo"];
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -45,4 +50,23 @@
 
     XCTAssertNotNil(@5, @"No nulo");
 }
+-(void) testEqualObjects
+{
+    XCTAssertEqualObjects(@"Hola", @"Hola", @"Deben ser iguales");
+}
+-(void) testNotEqualObjects
+{
+    XCTAssertNotEqualObjects(@"Hola", @"Mundo", @"Deben ser iguales");
+}
+-(void) testEqualObjectsUsingSetup
+{
+    XCTAssertEqualObjects(self.testArray[0], self.testArray[0], @"Deben ser iguales");
+}
+-(void) testNotEqualObjectsUsingSetup
+{
+    XCTAssertNotEqualObjects(self.testArray[0], self.testArray[1], @"Deben ser iguales");
+}
+
+
+
 @end
